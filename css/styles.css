@@ -1,3 +1,10 @@
+/* ============================================================
+   Mwagambo & Okonjo Advocates — Global Stylesheet
+   Palette: Navy #1a2744 | Gold #c9a84c | Off-white #f5f2ec | Dark #0d1526
+   Fonts: Cormorant Garamond (display) | Inter (body)
+   ============================================================ */
+
+/* ---- CSS Variables ---- */
 :root {
   --navy:        #1a2744;
   --navy-dark:   #0d1526;
@@ -20,6 +27,7 @@
   --shadow-lg: 0 12px 48px rgba(26, 39, 68, 0.18);
 }
 
+/* ---- Base ---- */
 *, *::before, *::after { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -52,6 +60,9 @@ img { max-width: 100%; height: auto; }
 .text-navy        { color: var(--navy) !important; }
 .text-navy-muted  { color: var(--navy-mid) !important; }
 
+/* ============================================================
+   BUTTONS
+   ============================================================ */
 .btn {
   font-family: var(--font-body);
   font-size: 0.875rem;
@@ -109,6 +120,9 @@ img { max-width: 100%; height: auto; }
   color: var(--navy-dark);
 }
 
+/* ============================================================
+   NAVBAR
+   ============================================================ */
 #mainNav {
   background: transparent;
   padding: 1.2rem 0;
@@ -176,6 +190,9 @@ img { max-width: 100%; height: auto; }
   color: var(--white) !important;
 }
 
+/* ============================================================
+   HERO
+   ============================================================ */
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -238,6 +255,9 @@ img { max-width: 100%; height: auto; }
   50% { transform: translateY(8px); opacity: 1; }
 }
 
+/* ============================================================
+   STATS BAR
+   ============================================================ */
 .stats-bar {
   background: var(--navy);
   border-bottom: 3px solid var(--gold);
@@ -266,6 +286,9 @@ img { max-width: 100%; height: auto; }
   color: rgba(255,255,255,0.6);
 }
 
+/* ============================================================
+   SECTION SHARED STYLES
+   ============================================================ */
 .section-light  { background: var(--off-white) !important; }
 .section-navy   { background: var(--navy); }
 .section-gold   { background: var(--gold-pale); }
@@ -296,6 +319,9 @@ img { max-width: 100%; height: auto; }
   max-width: 540px;
 }
 
+/* ============================================================
+   ABOUT IMAGE
+   ============================================================ */
 .about-image-wrap img {
   display: block;
   width: 100%;
@@ -333,6 +359,9 @@ img { max-width: 100%; height: auto; }
   line-height: 1;
 }
 
+/* ============================================================
+   PRACTICE AREA CARDS
+   ============================================================ */
 .practice-card {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(201,168,76,0.2);
@@ -387,6 +416,9 @@ img { max-width: 100%; height: auto; }
   border-color: var(--gold);
 }
 
+/* ============================================================
+   PARTNER CARDS
+   ============================================================ */
 .partner-card {
   background: var(--white);
   border-radius: var(--radius);
@@ -453,6 +485,9 @@ img { max-width: 100%; height: auto; }
 
 .partner-social:hover { color: var(--gold); }
 
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
 .testimonial-block {
   padding: 2rem 1rem;
 }
@@ -511,6 +546,9 @@ img { max-width: 100%; height: auto; }
   color: var(--navy);
 }
 
+/* ============================================================
+   BLOG CARDS
+   ============================================================ */
 .blog-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -583,6 +621,9 @@ img { max-width: 100%; height: auto; }
 
 .blog-card-link:hover { color: var(--navy); gap: 0.7rem; }
 
+/* ============================================================
+   FOOTER
+   ============================================================ */
 .site-footer {
   background: var(--navy-dark);
   color: rgba(255,255,255,0.65);
@@ -685,6 +726,9 @@ img { max-width: 100%; height: auto; }
 
 .footer-legal-link:hover { color: var(--gold); }
 
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
 @media (max-width: 991px) {
   .about-badge { right: 0; bottom: -1rem; }
   .navbar-collapse {
@@ -707,6 +751,9 @@ img { max-width: 100%; height: auto; }
   .hero-actions .btn { width: 100%; text-align: center; }
 }
 
+/* ============================================================
+   ACCESSIBILITY & REDUCED MOTION
+   ============================================================ */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
@@ -716,6 +763,11 @@ img { max-width: 100%; height: auto; }
   outline-offset: 3px;
 }
 
+/* ============================================================
+   ADDITIONAL STYLES — Updated from Company Profile
+   ============================================================ */
+
+/* Objective quote block */
 .objective-text {
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2vw, 1.4rem);
@@ -731,6 +783,7 @@ img { max-width: 100%; height: auto; }
   color: var(--gold);
 }
 
+/* Practice cards — light background version */
 .practice-card-light {
   background: var(--white);
   border: 1px solid var(--border);
@@ -773,6 +826,7 @@ img { max-width: 100%; height: auto; }
 }
 .practice-link-light:hover { color: var(--navy); gap: 0.7rem; }
 
+/* Practice CTA card */
 .practice-card-cta {
   background: var(--navy);
   border: 1px solid var(--gold);
@@ -786,6 +840,7 @@ img { max-width: 100%; height: auto; }
   box-shadow: var(--shadow);
 }
 
+/* Partner specialism tags */
 .partner-specialisms {
   display: flex;
   flex-wrap: wrap;
@@ -804,6 +859,7 @@ img { max-width: 100%; height: auto; }
   padding: 0.2rem 0.55rem;
 }
 
+/* Partner role text */
 .partner-role {
   font-size: 0.75rem;
   font-weight: 700;
@@ -813,6 +869,7 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 0.85rem;
 }
 
+/* Client grid */
 #clients {
   background-color: var(--off-white) !important;
 }
@@ -852,6 +909,7 @@ img { max-width: 100%; height: auto; }
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* Sector pills */
 .sector-pill {
   background: rgba(255,255,255,0.07);
   border: 1px solid rgba(201,168,76,0.25);
@@ -869,6 +927,7 @@ img { max-width: 100%; height: auto; }
   color: var(--gold);
 }
 
+/* Service pledge cards */
 .pledge-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -901,6 +960,7 @@ img { max-width: 100%; height: auto; }
   margin: 0;
 }
 
+/* btn-outline-gold for partner cards on dark bg */
 .btn-outline-gold {
   background: transparent;
   color: var(--gold);
@@ -916,4 +976,170 @@ img { max-width: 100%; height: auto; }
 .btn-outline-gold:hover {
   background: var(--gold);
   color: var(--navy-dark);
+}
+
+.page-hero {
+  position: relative;
+  min-height: 45vh;
+  padding-top: 6rem;
+  background:
+    linear-gradient(160deg, rgba(13,21,38,0.9) 0%, rgba(26,39,68,0.78) 100%),
+    url('../assets/images/page-hero-bg.jpg') center center / cover no-repeat;
+  background-color: var(--navy-dark);
+}
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(13,21,38,0.55) 0%, rgba(13,21,38,0.05) 100%);
+}
+.page-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.page-breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 0.82rem;
+}
+.page-breadcrumb .breadcrumb-item a {
+  color: var(--gold);
+}
+.page-breadcrumb .breadcrumb-item.active {
+  color: rgba(255,255,255,0.6);
+}
+.page-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255,255,255,0.4);
+}
+
+/* History images */
+.history-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Timeline cards */
+.timeline-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(201,168,76,0.25);
+  border-radius: var(--radius);
+  padding: 1.75rem 1.5rem;
+  height: 100%;
+  transition: var(--transition);
+}
+.timeline-card:hover {
+  border-color: var(--gold);
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-4px);
+}
+.timeline-year {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+.timeline-text {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Objective quote card */
+.objective-quote-card {
+  background: var(--white);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 2.25rem;
+  box-shadow: var(--shadow);
+}
+.objective-quote-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-style: italic;
+  color: var(--navy);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Location cards */
+.location-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(201,168,76,0.25);
+  border-radius: var(--radius);
+  padding: 2.25rem;
+  height: 100%;
+  text-align: center;
+  transition: var(--transition);
+}
+.location-card:hover {
+  border-color: var(--gold);
+  background: rgba(255,255,255,0.1);
+}
+.location-icon {
+  font-size: 2.2rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.location-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-bottom: 0.85rem;
+}
+.location-text {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.location-contact {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin: 0;
+}
+
+/* Value cards */
+.value-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  height: 100%;
+  transition: var(--transition);
+}
+.value-card:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+.value-icon {
+  font-size: 2rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  display: block;
+}
+.value-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 0.65rem;
+}
+.value-body {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .page-hero { min-height: 35vh; padding-top: 5.5rem; }
+  .history-img { height: 220px; }
 }
