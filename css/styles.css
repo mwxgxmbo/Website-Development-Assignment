@@ -1143,3 +1143,93 @@ img { max-width: 100%; height: auto; }
   .page-hero { min-height: 35vh; padding-top: 5.5rem; }
   .history-img { height: 220px; }
 }
+/* ============================================================
+   PRACTICE AREAS PAGE — Additional Components
+   ============================================================ */
+
+/* Filter bar */
+.filter-btn {
+  background: var(--white);
+  border: 1px solid var(--border);
+  color: var(--navy);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 1.1rem;
+  border-radius: 100px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.filter-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.filter-btn.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
+
+/* Practice detail blocks */
+.practice-detail-icon {
+  font-size: 2.5rem;
+  color: var(--gold);
+}
+.practice-detail-icon--gold {
+  color: var(--gold);
+}
+.practice-detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+.practice-subhead {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+.practice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.practice-list li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+.practice-list li::before {
+  content: '\F26B';
+  font-family: "bootstrap-icons";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  color: var(--gold);
+  font-size: 0.85rem;
+}
+.practice-list--dark li {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Sector chips (gold section) */
+.sector-chip {
+  background: var(--white);
+  border: 1px solid var(--gold);
+  color: var(--navy);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+}
+
+@media (max-width: 991px) {
+  .practice-detail-icon { font-size: 2rem; }
+}
