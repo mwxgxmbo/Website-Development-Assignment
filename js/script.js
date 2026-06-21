@@ -1,10 +1,5 @@
-/* ============================================================
-   Mwagambo & Okonjo Advocates — Global Script
-   ============================================================ */
-
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ---- Navbar scroll effect ---- */
   const mainNav = document.getElementById('mainNav');
   if (mainNav) {
     window.addEventListener('scroll', function () {
@@ -12,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---- Active nav link highlight ---- */
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
     const href = link.getAttribute('href');
@@ -23,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ---- Scroll reveal (fade-in on scroll) ---- */
   const revealEls = document.querySelectorAll(
     '.practice-card, .blog-card, .partner-card, .stat-item'
   );
@@ -44,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---- Contact form validation (contact.html) ---- */
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
@@ -118,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  /* ---- Practice area filter (practice-areas.html) ---- */
   const filterBtns = document.querySelectorAll('[data-filter]');
   const practiceItems = document.querySelectorAll('[data-area]');
 
@@ -142,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---- FAQ accordion keyboard accessibility ---- */
   document.querySelectorAll('.accordion-button').forEach(btn => {
     btn.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' || e.key === ' ') {
@@ -154,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-/* ---- CSS for scroll reveal (injected once) ---- */
 const style = document.createElement('style');
 style.textContent = `
   .reveal {
