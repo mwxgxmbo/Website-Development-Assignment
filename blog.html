@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Insights | Mwagambo & Okonjo LLP</title>
+  <meta name="description" content="Legal insights, articles, and updates from the advocates at Mwagambo & Okonjo LLP — covering corporate law, litigation, real estate, employment, and more." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-main">Mwagambo & Okonjo</span>
+        <span class="brand-sub">LLP · Attorneys at Law</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="practice-areas.html">Practice Areas</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-gold" href="contact.html">Get Counsel</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero d-flex align-items-center">
+    <div class="page-hero-overlay"></div>
+    <div class="container position-relative z-1">
+      <div class="row">
+        <div class="col-lg-8">
+          <p class="hero-eyebrow">Knowledge &amp; Commentary</p>
+          <h1 class="page-hero-title">Legal Insights</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb page-breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Insights</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED ARTICLE ===== -->
+  <section class="section-light py-6" id="featured">
+    <div class="container">
+      <p class="section-eyebrow">Featured Article</p>
+      <div class="featured-article-card">
+        <div class="row g-0 align-items-stretch">
+          <div class="col-lg-5">
+            <div class="featured-article-img-wrap">
+              <img
+                src="assets/images/blog-featured.jpg"
+                alt="Corporate law article"
+                class="featured-article-img"
+                onerror="this.src='https://placehold.co/700x480/1a2744/c9a84c?text=Featured+Article'"
+              />
+              <span class="featured-article-badge">Corporate Law</span>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="featured-article-body">
+              <div class="blog-meta mb-3">
+                <span><i class="bi bi-person me-1"></i>Emmanuel Mwagambo</span>
+                <span><i class="bi bi-calendar3 me-1"></i>10 June 2026</span>
+                <span><i class="bi bi-clock me-1"></i>6 min read</span>
+              </div>
+              <h2 class="featured-article-title">
+                The Companies (Amendment) Act 2024: What Every Kenyan Business Must Do Before the Deadline
+              </h2>
+              <p class="featured-article-excerpt">
+                Kenya's amended companies legislation introduced sweeping changes to beneficial ownership disclosure, annual return requirements, and penalties for non-compliance. With the compliance deadline approaching, many businesses remain unaware of their obligations. This article provides a practical breakdown of what has changed, who is affected, and the steps boards and company secretaries must take immediately.
+              </p>
+              <p class="featured-article-excerpt">
+                Under the new regime, every company — including private limited companies and foreign-incorporated entities operating in Kenya — must file a Beneficial Ownership Register with the Registrar of Companies. Failure to do so attracts a fine of up to Ksh. 500,000, with additional daily penalties for continuing non-compliance.
+              </p>
+              <a href="#article-1" class="btn btn-navy mt-2">Read Full Article <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG FILTER ===== -->
+  <section class="section-light pb-3" id="blog-filter">
+    <div class="container">
+      <div class="filter-bar d-flex flex-wrap justify-content-center gap-2">
+        <button class="filter-btn active" data-filter="all">All Articles</button>
+        <button class="filter-btn" data-filter="corporate">Corporate Law</button>
+        <button class="filter-btn" data-filter="litigation">Litigation</button>
+        <button class="filter-btn" data-filter="property">Property Law</button>
+        <button class="filter-btn" data-filter="employment">Employment</button>
+        <button class="filter-btn" data-filter="constitutional">Constitutional</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ARTICLES GRID ===== -->
+  <section class="section-light py-5" id="articles">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Article 1 -->
+        <div class="col-md-6 col-lg-4" data-blog-area="corporate" id="article-1">
+          <article class="blog-article-card h-100">
+            <div class="blog-article-img-wrap">
+              <img
+                src="assets/images/blog-corporate-1.jpg"
+                alt="Corporate law article"
+                class="blog-article-img"
+                onerror="this.src='https://placehold.co/420x240/1a2744/c9a84c?text=Corporate+Law'"
+              />
+              <span class="blog-article-tag">Corporate Law</span>
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-meta mb-2">
+                <span><i class="bi bi-person me-1"></i>Emmanuel Mwagambo</span>
+                <span><i class="bi bi-calendar3 me-1"></i>10 June 2026</span>
+              </div>
+              <h3 class="blog-article-title">
+                The Companies (Amendment) Act 2024: What Every Kenyan Business Must Do Before the Deadline
+              </h3>
+              <p class="blog-article-excerpt">
+                A practical breakdown of the new beneficial ownership disclosure requirements, who is affected, and the immediate steps boards must take to avoid penalties of up to Ksh. 500,000.
+              </p>
+              <a href="#article-1" class="blog-read-more">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="col-md-6 col-lg-4" data-blog-area="employment" id="article-2">
+          <article class="blog-article-card h-100">
+            <div class="blog-article-img-wrap">
+              <img
+                src="assets/images/blog-employment-1.jpg"
+                alt="Employment law article"
+                class="blog-article-img"
+                onerror="this.src='https://placehold.co/420x240/1a2744/c9a84c?text=Employment+Law'"
+              />
+              <span class="blog-article-tag">Employment Law</span>
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-meta mb-2">
+                <span><i class="bi bi-person me-1"></i>Donald O. Okonjo</span>
+                <span><i class="bi bi-calendar3 me-1"></i>28 May 2026</span>
+              </div>
+              <h3 class="blog-article-title">
+                Remote Work and the Employment Act: Closing the Legal Gap for Kenyan Employers
+              </h3>
+              <p class="blog-article-excerpt">
+                As hybrid work becomes the norm, Kenyan employers face a growing legal gap between existing employment contracts and the practical reality of remote arrangements. We break down your obligations.
+              </p>
+              <a href="#article-2" class="blog-read-more">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="col-md-6 col-lg-4" data-blog-area="property" id="article-3">
+          <article class="blog-article-card h-100">
+            <div class="blog-article-img-wrap">
+              <img
+                src="assets/images/blog-property-1.jpg"
+                alt="Property law article"
+                class="blog-article-img"
+                onerror="this.src='https://placehold.co/420x240/1a2744/c9a84c?text=Property+Law'"
+              />
+              <span class="blog-article-tag">Property Law</span>
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-meta mb-2">
+                <span><i class="bi bi-person me-1"></i>Sandy N. Ogechi</span>
+                <span><i class="bi bi-calendar3 me-1"></i>14 May 2026</span>
+              </div>
+              <h3 class="blog-article-title">
+                E-Title Deeds in Kenya: What Buyers and Sellers Need to Know in 2026
+              </h3>
+              <p class="blog-article-excerpt">
+                The National Land Commission's rollout of digital title deeds has changed the conveyancing process significantly. We explain the new verification steps and what they mean for your property transaction.
+              </p>
+              <a href="#article-3" class="blog-read-more">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="col-md-6 col-lg-4" data-blog-area="litigation" id="article-4">
+          <article class="blog-article-card h-100">
+            <div class="blog-article-img-wrap">
+              <img
+                src="assets/images/blog-litigation-1.jpg"
+                alt="Litigation article"
+                class="blog-article-img"
+                onerror="this.src='https://placehold.co/420x240/1a2744/c9a84c?text=Litigation'"
+              />
+              <span class="blog-article-tag">Litigation</span>
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-meta mb-2">
+                <span><i class="bi bi-person me-1"></i>Emmanuel Mwagambo</span>
+                <span><i class="bi bi-calendar3 me-1"></i>2 May 2026</span>
+              </div>
+              <h3 class="blog-article-title">
+                Compulsory Land Acquisition in Kenya: Your Rights and the Compensation Process Explained
+              </h3>
+              <p class="blog-article-excerpt">
+                When the government acquires your land for public purposes, the process can feel overwhelming. This article explains the legal framework, your right to fair compensation, and how to challenge inadequate offers.
+              </p>
+              <a href="#article-4" class="blog-read-more">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="col-md-6 col-lg-4" data-blog-area="corporate" id="article-5">
+          <article class="blog-article-card h-100">
+            <div class="blog-article-img-wrap">
+              <img
+                src="assets/images/blog-corporate-2.jpg"
+                alt="Corporate finance article"
+                class="blog-article-img"
+                onerror="this.src='https://placehold.co/420x240/1a2744/c9a84c?text=Corporate+Finance'"
+              />
+              <span class="blog-article-tag">Corporate Law</span>
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-meta mb-2">
+                <span><i class="bi bi-person me-1"></i>Donald O. Okonjo</span>
+                <span><i class="bi bi-calendar3 me-1"></i>18 April 2026</span>
+              </div>
+              <h3 class="blog-article-title">
+                Joint Ventures in Kenya: Structuring Your Agreement to Protect All Parties
+              </h3>
+              <p class="blog-article-excerpt">
+                Joint ventures are a powerful tool for business growth, but poorly structured agreements create serious legal risk. We outline the key clauses every JV agreement in Kenya must address.
+              </p>
+              <a href="#article-5" class="blog-read-more">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="col-md-6 col-lg-4" data-blog-area="constitutional" id="article-6">
+          <article class="blog-article-card h-100">
+            <div class="blog-article-img-wrap">
+              <img
+                src="assets/images/blog-constitutional-1.jpg"
+                alt="Constitutional law article"
+                class="blog-article-img"
+                onerror="this.src='https://placehold.co/420x240/1a2744/c9a84c?text=Constitutional+Law'"
+              />
+              <span class="blog-article-tag">Constitutional Law</span>
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-meta mb-2">
+                <span><i class="bi bi-person me-1"></i>Emmanuel Mwagambo</span>
+                <span><i class="bi bi-calendar3 me-1"></i>5 April 2026</span>
+              </div>
+              <h3 class="blog-article-title">
+                Judicial Review in Kenya: When Can You Challenge a Government Decision in Court?
+              </h3>
+              <p class="blog-article-excerpt">
+                Judicial review is one of the most powerful tools available to citizens and organisations aggrieved by public body decisions. This article explains the grounds, timelines, and what courts look for.
+              </p>
+              <a href="#article-6" class="blog-read-more">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 7 -->
+        <div class="col-md-6 col-lg-4" data-blog-area="employment" id="article-7">
+          <article class="blog-article-card h-100">
+            <div class="blog-article-img-wrap">
+              <img
+                src="assets/images/blog-employment-2.jpg"
+                alt="Employment termination article"
+                class="blog-article-img"
+                onerror="this.src='https://placehold.co/420x240/1a2744/c9a84c?text=Employment+Law'"
+              />
+              <span class="blog-article-tag">Employment Law</span>
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-meta mb-2">
+                <span><i class="bi bi-person me-1"></i>Maurine N. Wechuli</span>
+                <span><i class="bi bi-calendar3 me-1"></i>20 March 2026</span>
+              </div>
+              <h3 class="blog-article-title">
+                Unfair Dismissal Claims in Kenya: What Employees and Employers Must Know
+              </h3>
+              <p class="blog-article-excerpt">
+                Wrongful termination is one of the most common causes of action before Kenya's Employment and Labour Relations Court. We explain what constitutes unfair dismissal and how both sides can protect themselves.
+              </p>
+              <a href="#article-7" class="blog-read-more">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 8 -->
+        <div class="col-md-6 col-lg-4" data-blog-area="property" id="article-8">
+          <article class="blog-article-card h-100">
+            <div class="blog-article-img-wrap">
+              <img
+                src="assets/images/blog-property-2.jpg"
+                alt="Real estate development article"
+                class="blog-article-img"
+                onerror="this.src='https://placehold.co/420x240/1a2744/c9a84c?text=Real+Estate'"
+              />
+              <span class="blog-article-tag">Property Law</span>
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-meta mb-2">
+                <span><i class="bi bi-person me-1"></i>Donald O. Okonjo</span>
+                <span><i class="bi bi-calendar3 me-1"></i>8 March 2026</span>
+              </div>
+              <h3 class="blog-article-title">
+                Financing a Real Estate Development in Kenya: Legal Structures and What to Watch Out For
+              </h3>
+              <p class="blog-article-excerpt">
+                From single-lender loans to syndicate financing and off-plan sale arrangements, the legal structure of your real estate financing affects everything from risk allocation to exit options. Here is what developers need to know.
+              </p>
+              <a href="#article-8" class="blog-read-more">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Article 9 -->
+        <div class="col-md-6 col-lg-4" data-blog-area="litigation" id="article-9">
+          <article class="blog-article-card h-100">
+            <div class="blog-article-img-wrap">
+              <img
+                src="assets/images/blog-litigation-2.jpg"
+                alt="ADR article"
+                class="blog-article-img"
+                onerror="this.src='https://placehold.co/420x240/1a2744/c9a84c?text=Arbitration+%26+ADR'"
+              />
+              <span class="blog-article-tag">Litigation</span>
+            </div>
+            <div class="blog-article-body">
+              <div class="blog-meta mb-2">
+                <span><i class="bi bi-person me-1"></i>Sandy N. Ogechi</span>
+                <span><i class="bi bi-calendar3 me-1"></i>14 February 2026</span>
+              </div>
+              <h3 class="blog-article-title">
+                Arbitration vs. Litigation in Kenya: Which Is Right for Your Commercial Dispute?
+              </h3>
+              <p class="blog-article-excerpt">
+                Given the delays and backlog in Kenya's court system, alternative dispute resolution is increasingly the preferred route for commercial parties. We compare arbitration and litigation across cost, time, and enforceability.
+              </p>
+              <a href="#article-9" class="blog-read-more">Read Article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER CTA ===== -->
+  <section class="section-navy py-6" id="newsletter">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-6">
+          <p class="section-eyebrow text-gold-muted">Stay Informed</p>
+          <h2 class="section-title text-white mb-3">Get Legal Updates in Your Inbox</h2>
+          <p class="text-white-50 mb-4">
+            Subscribe to receive our latest articles, regulatory updates, and legal commentary — written in plain language for business owners, professionals, and individuals.
+          </p>
+          <div class="newsletter-form d-flex flex-wrap gap-2 justify-content-center" id="newsletterWrapper">
+            <input
+              type="email"
+              id="newsletterEmail"
+              class="form-control newsletter-input"
+              placeholder="Enter your email address"
+              aria-label="Email address"
+            />
+            <button class="btn btn-gold" onclick="handleNewsletterSubmit()">Subscribe</button>
+          </div>
+          <p class="text-white-50 mt-3 small">No spam. Unsubscribe at any time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer pt-6 pb-4">
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <a class="footer-brand" href="index.html">
+            <span class="brand-main">Mwagambo & Okonjo</span>
+            <span class="brand-sub">LLP · Attorneys at Law</span>
+          </a>
+          <p class="footer-tagline mt-3">
+            A Kenyan commercial law firm providing quality, innovative, and cost-effective legal services to local and international clients since 2007.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Firm</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Insights</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-heading">Practice Areas</h4>
+          <ul class="footer-links">
+            <li><a href="practice-areas.html#corporate">Corporate &amp; Commercial</a></li>
+            <li><a href="practice-areas.html#litigation">Litigation &amp; Arbitration</a></li>
+            <li><a href="practice-areas.html#property">Commercial Property</a></li>
+            <li><a href="practice-areas.html#employment">Employment Law</a></li>
+            <li><a href="practice-areas.html#constitutional">Constitutional Law</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Office No. 1, Between Kindaruma Rd &amp; George Padmore Lane, Kilimani, Nairobi</span>
+            </li>
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Pine Court Building, Lamu Road, Malindi</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:+254720529180">+254 720 529 180</a>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:info@mwagambo-okonjo.co.ke">info@mwagambo-okonjo.co.ke</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider mt-5 mb-4" />
+
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="footer-copy mb-0">
+            &copy; 2026 Mwagambo &amp; Okonjo LLP. All rights reserved. | LLP Reg. No. LLP-6R1KKD6
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <a href="faq.html" class="footer-legal-link me-3">FAQ</a>
+          <a href="#" class="footer-legal-link me-3">Privacy Policy</a>
+          <a href="contact.html" class="footer-legal-link">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    /* ---- Blog category filter ---- */
+    const blogFilterBtns = document.querySelectorAll('#blog-filter [data-filter]');
+    const blogItems = document.querySelectorAll('[data-blog-area]');
+
+    blogFilterBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        blogFilterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.getAttribute('data-filter');
+        blogItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-blog-area') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    /* ---- Newsletter submit ---- */
+    function handleNewsletterSubmit() {
+      const emailInput = document.getElementById('newsletterEmail');
+      const wrapper = document.getElementById('newsletterWrapper');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
+        emailInput.classList.add('is-invalid');
+        return;
+      }
+
+      emailInput.classList.remove('is-invalid');
+      wrapper.innerHTML = `
+        <div class="text-center w-100">
+          <i class="bi bi-check-circle-fill text-gold fs-2 d-block mb-2"></i>
+          <p class="text-white mb-0">Thank you for subscribing! You will receive our next update shortly.</p>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
