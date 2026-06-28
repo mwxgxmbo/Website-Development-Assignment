@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -42,7 +41,6 @@
     </div>
   </nav>
 
-  <!-- ===== PAGE HERO ===== -->
   <section class="page-hero d-flex align-items-center">
     <div class="page-hero-overlay"></div>
     <div class="container position-relative z-1">
@@ -61,7 +59,6 @@
     </div>
   </section>
 
-  <!-- ===== FEATURED ARTICLE ===== -->
   <section class="section-light py-6" id="featured">
     <div class="container">
       <p class="section-eyebrow">Featured Article</p>
@@ -102,7 +99,6 @@
     </div>
   </section>
 
-  <!-- ===== BLOG FILTER ===== -->
   <section class="section-light pb-3" id="blog-filter">
     <div class="container">
       <div class="filter-bar d-flex flex-wrap justify-content-center gap-2">
@@ -116,12 +112,10 @@
     </div>
   </section>
 
-  <!-- ===== ARTICLES GRID ===== -->
   <section class="section-light py-5" id="articles">
     <div class="container">
       <div class="row gy-4">
 
-        <!-- Article 1 -->
         <div class="col-md-6 col-lg-4" data-blog-area="corporate" id="article-1">
           <article class="blog-article-card h-100">
             <div class="blog-article-img-wrap">
@@ -149,7 +143,6 @@
           </article>
         </div>
 
-        <!-- Article 2 -->
         <div class="col-md-6 col-lg-4" data-blog-area="employment" id="article-2">
           <article class="blog-article-card h-100">
             <div class="blog-article-img-wrap">
@@ -177,7 +170,6 @@
           </article>
         </div>
 
-        <!-- Article 3 -->
         <div class="col-md-6 col-lg-4" data-blog-area="property" id="article-3">
           <article class="blog-article-card h-100">
             <div class="blog-article-img-wrap">
@@ -205,7 +197,6 @@
           </article>
         </div>
 
-        <!-- Article 4 -->
         <div class="col-md-6 col-lg-4" data-blog-area="litigation" id="article-4">
           <article class="blog-article-card h-100">
             <div class="blog-article-img-wrap">
@@ -233,7 +224,6 @@
           </article>
         </div>
 
-        <!-- Article 5 -->
         <div class="col-md-6 col-lg-4" data-blog-area="corporate" id="article-5">
           <article class="blog-article-card h-100">
             <div class="blog-article-img-wrap">
@@ -261,7 +251,6 @@
           </article>
         </div>
 
-        <!-- Article 6 -->
         <div class="col-md-6 col-lg-4" data-blog-area="constitutional" id="article-6">
           <article class="blog-article-card h-100">
             <div class="blog-article-img-wrap">
@@ -289,7 +278,6 @@
           </article>
         </div>
 
-        <!-- Article 7 -->
         <div class="col-md-6 col-lg-4" data-blog-area="employment" id="article-7">
           <article class="blog-article-card h-100">
             <div class="blog-article-img-wrap">
@@ -317,7 +305,6 @@
           </article>
         </div>
 
-        <!-- Article 8 -->
         <div class="col-md-6 col-lg-4" data-blog-area="property" id="article-8">
           <article class="blog-article-card h-100">
             <div class="blog-article-img-wrap">
@@ -345,7 +332,6 @@
           </article>
         </div>
 
-        <!-- Article 9 -->
         <div class="col-md-6 col-lg-4" data-blog-area="litigation" id="article-9">
           <article class="blog-article-card h-100">
             <div class="blog-article-img-wrap">
@@ -377,7 +363,6 @@
     </div>
   </section>
 
-  <!-- ===== NEWSLETTER CTA ===== -->
   <section class="section-navy py-6" id="newsletter">
     <div class="container">
       <div class="row justify-content-center text-center">
@@ -403,7 +388,6 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="site-footer pt-6 pb-4">
     <div class="container">
       <div class="row gy-5">
@@ -485,7 +469,6 @@
   <script src="js/script.js"></script>
 
   <script>
-    /* ---- Blog category filter ---- */
     const blogFilterBtns = document.querySelectorAll('#blog-filter [data-filter]');
     const blogItems = document.querySelectorAll('[data-blog-area]');
 
@@ -504,7 +487,6 @@
       });
     });
 
-    /* ---- Newsletter submit ---- */
     function handleNewsletterSubmit() {
       const emailInput = document.getElementById('newsletterEmail');
       const wrapper = document.getElementById('newsletterWrapper');
