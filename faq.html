@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -42,7 +41,6 @@
     </div>
   </nav>
 
-  <!-- ===== PAGE HERO ===== -->
   <section class="page-hero d-flex align-items-center">
     <div class="page-hero-overlay"></div>
     <div class="container position-relative z-1">
@@ -61,7 +59,6 @@
     </div>
   </section>
 
-  <!-- ===== FAQ SEARCH ===== -->
   <section class="section-light py-5" id="faq-search">
     <div class="container">
       <div class="row justify-content-center">
@@ -86,7 +83,6 @@
     </div>
   </section>
 
-  <!-- ===== FAQ CATEGORIES ===== -->
   <section class="section-light pb-3" id="faq-filter">
     <div class="container">
       <div class="filter-bar d-flex flex-wrap justify-content-center gap-2">
@@ -100,7 +96,6 @@
     </div>
   </section>
 
-  <!-- ===== FAQ ACCORDION ===== -->
   <section class="section-light py-5" id="faq-content">
     <div class="container">
       <div class="row justify-content-center">
@@ -171,7 +166,6 @@
             </div>
           </div>
 
-          <!-- CORPORATE LAW -->
           <div class="faq-group mt-5" data-faq-area="corporate">
             <h3 class="faq-group-heading"><i class="bi bi-briefcase-fill me-2"></i>Corporate &amp; Commercial Law</h3>
 
@@ -222,7 +216,6 @@
             </div>
           </div>
 
-          <!-- LITIGATION -->
           <div class="faq-group mt-5" data-faq-area="litigation">
             <h3 class="faq-group-heading"><i class="bi bi-bank2 me-2"></i>Litigation &amp; Arbitration</h3>
 
@@ -273,7 +266,6 @@
             </div>
           </div>
 
-          <!-- PROPERTY LAW -->
           <div class="faq-group mt-5" data-faq-area="property">
             <h3 class="faq-group-heading"><i class="bi bi-house-fill me-2"></i>Property &amp; Real Estate</h3>
 
@@ -324,7 +316,6 @@
             </div>
           </div>
 
-          <!-- EMPLOYMENT LAW -->
           <div class="faq-group mt-5" data-faq-area="employment">
             <h3 class="faq-group-heading"><i class="bi bi-people-fill me-2"></i>Employment &amp; Labour Law</h3>
 
@@ -375,7 +366,6 @@
             </div>
           </div>
 
-          <!-- No results message -->
           <div id="faqNoResults" class="faq-no-results d-none text-center py-5">
             <i class="bi bi-search fs-1 text-muted d-block mb-3"></i>
             <p class="text-muted">No questions found matching your search. Please try different keywords or <a href="contact.html" class="text-gold">contact us directly</a>.</p>
@@ -386,7 +376,6 @@
     </div>
   </section>
 
-  <!-- ===== STILL HAVE QUESTIONS ===== -->
   <section class="section-navy py-6 text-center" id="still-questions">
     <div class="container">
       <div class="row justify-content-center">
@@ -407,7 +396,6 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="site-footer pt-6 pb-4">
     <div class="container">
       <div class="row gy-5">
@@ -489,7 +477,6 @@
   <script src="js/script.js"></script>
 
   <script>
-    /* ---- FAQ category filter ---- */
     const faqFilterBtns = document.querySelectorAll('[data-faq-filter]');
     const faqGroups = document.querySelectorAll('[data-faq-area]');
 
@@ -506,14 +493,12 @@
       });
     });
 
-    /* ---- FAQ search ---- */
     document.getElementById('faqSearch').addEventListener('input', function () {
       const query = this.value.trim().toLowerCase();
       const items = document.querySelectorAll('.faq-item');
       const noResults = document.getElementById('faqNoResults');
       let visibleCount = 0;
 
-      // Show all groups first
       faqGroups.forEach(g => g.style.display = 'block');
       faqFilterBtns.forEach(b => b.classList.remove('active'));
       document.querySelector('[data-faq-filter="all"]').classList.add('active');
