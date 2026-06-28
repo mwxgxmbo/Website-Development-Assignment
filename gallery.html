@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -42,7 +41,6 @@
     </div>
   </nav>
 
-  <!-- ===== PAGE HERO ===== -->
   <section class="page-hero d-flex align-items-center">
     <div class="page-hero-overlay"></div>
     <div class="container position-relative z-1">
@@ -61,7 +59,6 @@
     </div>
   </section>
 
-  <!-- ===== FILTER ===== -->
   <section class="section-light py-5" id="gallery-filter">
     <div class="container">
       <div class="text-center mb-4">
@@ -78,12 +75,10 @@
     </div>
   </section>
 
-  <!-- ===== GALLERY GRID ===== -->
   <section class="section-light pb-6" id="gallery-grid">
     <div class="container">
       <div class="gallery-grid" id="galleryGrid">
 
-        <!-- Office photos -->
         <div class="gallery-item" data-gallery-area="office">
           <div class="gallery-img-wrap">
             <img
@@ -152,7 +147,6 @@
           </div>
         </div>
 
-        <!-- Team photos -->
         <div class="gallery-item gallery-item--wide" data-gallery-area="team">
           <div class="gallery-img-wrap">
             <img
@@ -221,7 +215,6 @@
           </div>
         </div>
 
-        <!-- Events photos -->
         <div class="gallery-item" data-gallery-area="events">
           <div class="gallery-img-wrap">
             <img
@@ -290,7 +283,6 @@
           </div>
         </div>
 
-        <!-- Community photos -->
         <div class="gallery-item" data-gallery-area="community">
           <div class="gallery-img-wrap">
             <img
@@ -346,7 +338,6 @@
     </div>
   </section>
 
-  <!-- ===== LIGHTBOX MODAL ===== -->
   <div class="modal fade" id="galleryModal" tabindex="-1" aria-label="Image preview" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content gallery-modal-content">
@@ -359,7 +350,6 @@
     </div>
   </div>
 
-  <!-- ===== CTA ===== -->
   <section class="section-navy py-6 text-center" id="cta">
     <div class="container">
       <div class="row justify-content-center">
@@ -375,7 +365,6 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="site-footer pt-6 pb-4">
     <div class="container">
       <div class="row gy-5">
@@ -457,7 +446,6 @@
   <script src="js/script.js"></script>
 
   <script>
-    /* ---- Gallery filter ---- */
     const galleryFilterBtns = document.querySelectorAll('[data-gallery-filter]');
     const galleryItems = document.querySelectorAll('[data-gallery-area]');
 
@@ -476,7 +464,6 @@
       });
     });
 
-    /* ---- Lightbox ---- */
     const galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
     const modalImg = document.getElementById('galleryModalImg');
     const modalCaption = document.getElementById('galleryModalCaption');
